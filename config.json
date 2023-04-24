@@ -1,0 +1,17 @@
+{
+    "name": "slurmd_service",
+    "serviceDetail": {
+      "logfile": "/var/log/opsramp/agent.log",
+      "pattern": "Critical. Service slurmd.service is not running",
+      "action": {
+        "command": "/usr/bin/systemctl",
+        "args": [
+          "start",
+          "slurmd.service"
+        ]
+      },
+      "timeDuration": 60,
+      "enable": true
+    }
+  }
+  
